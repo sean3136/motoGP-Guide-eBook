@@ -90,10 +90,6 @@ struct ContentView: View {
                     .groupBoxStyle(ColoredGroupBox())
                     
                     
-                    
-                    
-                    
-                    
                 GroupBox(label:
                         Label("10-DAY FORCAST", systemImage: "calendar")
                     .foregroundColor(.gray)
