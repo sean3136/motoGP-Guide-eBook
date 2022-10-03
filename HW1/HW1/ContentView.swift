@@ -31,6 +31,7 @@ struct ContentView: View {
                     .font(.system(size:20))
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
+                    .padding(.bottom)
                 GroupBox(label:Text("Clear conditions tonight, continuing through the morning.")
                     .foregroundColor(.white)
                     .font(.system(size:15))
@@ -39,44 +40,55 @@ struct ContentView: View {
                         HStack{
                             VStack{
                                 Text("Now")
-                                    
                                 Image(systemName: "moon.stars.fill")
-                                    .frame(maxHeight: 35)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxHeight: 29)
                                 Text("27°")
                             }
                             .frame(maxWidth: .infinity)
                             VStack{
                                 Text("01")
                                 Image(systemName: "moon.stars.fill")
-                                    .frame(maxHeight: 35)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxHeight: 28)
                                 Text("27°")
                             }
                             .frame(maxWidth: .infinity)
                             VStack{
                                 Text("02")
                                 Image(systemName: "moon.stars.fill")
-                                    .frame(maxHeight: 35)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxHeight: 28)
                                 Text("26°")
                             }
                             .frame(maxWidth: .infinity)
                             VStack{
                                 Text("03")
                                 Image(systemName: "moon.stars.fill")
-                                    .frame(maxHeight: 35)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxHeight: 28)
                                 Text("26°")
                             }
                             .frame(maxWidth: .infinity)
                             VStack{
                                 Text("04")
                                 Image(systemName: "moon.stars.fill")
-                                    .frame(maxHeight: 35)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxHeight: 28)
                                 Text("26°")
                             }
                             .frame(maxWidth: .infinity)
                             VStack{
                                 Text("05")
                                 Image(systemName: "moon.stars.fill")
-                                    .frame(maxHeight: 35)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxHeight: 28)
                                 Text("26°")
                             }
                             
@@ -93,8 +105,9 @@ struct ContentView: View {
                 GroupBox(label:
                         Label("10-DAY FORCAST", systemImage: "calendar")
                     .foregroundColor(.gray)
-                    .font(/*@START_MENU_TOKEN@*/.caption/*@END_MENU_TOKEN@*/)
+                    .font(.system(size:12))
                     .foregroundColor(.white)
+                    .fontWeight(.bold)
                     ) {
                         ScrollView(.vertical, showsIndicators: true) {
                             Divider()
@@ -176,7 +189,7 @@ struct ContentView: View {
                                     .frame(maxWidth: 81, alignment: .leading)
                                     .foregroundColor(Color.white)
                                 VStack{
-                                    Image(systemName: "cloud.bolt.rain")
+                                    Image(systemName: "cloud.bolt.rain.fill")
                                         .foregroundStyle(.white, Color(red: 0.5058823529411764, green: 0.8117647058823529, blue: 0.9803921568627451), .white)
                                     Text("80%")
                                         .font(.system(size:12))
@@ -288,7 +301,7 @@ struct ContentView: View {
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 8, style: .continuous)
-                .fill(.black.opacity(0.1)))
+                .fill(Color(red: 0.5058823529411764, green: 0.8117647058823529, blue: 0.9803921568627451).opacity(0.1)))
         }
     }
     
