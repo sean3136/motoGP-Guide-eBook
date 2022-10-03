@@ -37,6 +37,7 @@ struct ContentView: View {
                     .font(.system(size:15))
                     .fontWeight(.bold)) {
                         Divider()
+                            .background(.gray)
                         HStack{
                             VStack{
                                 Text("Now")
@@ -111,7 +112,7 @@ struct ContentView: View {
                     ) {
                         ScrollView(.vertical, showsIndicators: true) {
                             Divider()
-                        
+                                .background(.gray)
                             HStack{
                                 Text("Today")
                                     .font(.title3)
@@ -135,7 +136,7 @@ struct ContentView: View {
                                 
                             }
                             Divider()
-                        
+                                .background(.gray)
                             HStack{
                                 Text("Mon")
                                     .font(.title3)
@@ -158,7 +159,7 @@ struct ContentView: View {
                                 
                             }
                             Divider()
-                        
+                                .background(.gray)
                             HStack{
                                 Text("Tue")
                                     .font(.title3)
@@ -181,7 +182,7 @@ struct ContentView: View {
                                 
                             }
                             Divider()
-                        
+                                .background(.gray)
                             HStack{
                                 Text("Wed")
                                     .font(.title3)
@@ -209,8 +210,8 @@ struct ContentView: View {
                                 .frame(maxWidth: .infinity)
                                 
                             }
-                            
                             Divider()
+                                .background(.gray)
                             HStack{
                                 Text("Thu")
                                     .font(.title3)
@@ -237,8 +238,8 @@ struct ContentView: View {
                         }
                     }
                     .groupBoxStyle(ColoredGroupBox())
-                    
                 Divider()
+                    .background(.gray)
                 HStack{
                     
                     Image(systemName: "map")
