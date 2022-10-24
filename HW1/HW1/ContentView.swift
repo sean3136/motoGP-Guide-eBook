@@ -276,9 +276,6 @@ struct ContentView: View {
             }
             .padding(.horizontal)
             .padding(.bottom, 0.5)
-            
-            
-            
         }
     }
     
@@ -305,6 +302,6 @@ struct ContentView: View {
                 .fill(Color(red: 0.5058823529411764, green: 0.8117647058823529, blue: 0.9803921568627451).opacity(0.1)))
         }
     }
-    
-   
 }
+
+    
